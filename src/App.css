@@ -1,0 +1,31 @@
+body {
+  background-color: brown;
+}
+
+.grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0px;
+}
+
+.box {
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(208, 255, 0);
+  z-index: 0;
+  transition-duration: 10ms;
+}
+.box::before {
+  background-color: red;
+}
+.box::after {
+  background-color: green;
+}
+.icon {
+  font-size: 35px;
+  color: #2ee40a;
+}
